@@ -1,0 +1,142 @@
+一：git 常用指令
+0.全局配置
+	1.config --global user.name"xxx"
+	2.config --global user.emal "xxx"
+
+1.检查版本git的版本
+	git --version
+2.添加暂存盘
+	git add readme.txt
+
+3.暂存盘恢复
+	git checkout readme.txt
+
+4.全部文件添加到暂存盘
+	git add . 或者 git add --all
+
+5.全部暂存盘恢复
+	git checkout.
+
+6.添加到版本库
+	0.git commit -m "v1"
+	1.先修改文件或内容
+	2.git add.		添加到暂存盘
+	3.git commit -m "v2"
+	
+7.查看版本库
+	git log 查看记录
+	git relog 查看版本
+	
+8.返回指定版本命令 (自己查怎么用)
+	git reset --hard 
+	git reset --hard HEAD^
+	^代表上一版本
+	^^代表上上个版本
+
+
+二：分支
+1.切换到分支
+	git checkout -b dev
+2.查看分支
+	git branch
+3.创建分支
+	git branch mumu
+4.切换到mumu分支
+	git checkout mumu
+5.这个是创建并切换到dev分支
+	git checkout -b dev
+6.切换到主分支
+	git checkout master
+7.合并分支
+git merge 分支名称 合并分支
+	1.把dev分支合并到主支
+		git merge dev
+	2.把mumu分支合并到主支
+		git merge mumu
+
+
+三:分支策略
+
+1.git merge 主分支:版本发布
+
+2.dev分支:开发分支
+
+3.个人分支:个人开发
+	功能1分支
+	功能2分支
+	bug分支
+
+4.流程
+	1.功能1完善merge合并到个人分支
+	2.个人分支merge合并到dev开发分支
+	3.当有新的版本发布dev分支merge合并到mastert分支
+
+
+四：发布版本(自己理解的)
+	发布版本为v1.3.0
+	git tag v1.3.0
+	
+五：标签
+	存储一个有名称快照,不能来回切换,可以吧快照取回
+	git tag 查看标签
+	git tag v1.2.2大一个标签
+	git tag -d v1.2.2 删除标签v1.2.2
+
+
+六:用git下载远程仓库资源
+	1.github 搜索需要的内容
+	2.通https进行下载,指令是git clone  https网址
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
